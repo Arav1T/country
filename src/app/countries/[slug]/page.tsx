@@ -45,7 +45,7 @@ export default async function CountryPage({ params }: PageProps) {
     region: country.region,
     subregion: country.subregion,
     population: country.population,
-    url: `https://yourdomain.com/countries/${encodeURIComponent(
+    url: `https://country-mu-beige.vercel.app/countries/${encodeURIComponent(
       country.name.common
     )}`,
   };

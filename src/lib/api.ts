@@ -1,8 +1,6 @@
 const BASE_URL = "https://restcountries.com/v3.1";
 
-/**
- * Fetch all countries (SSR-safe)
- */
+
 export async function fetchAllCountries() {
   const res = await fetch(
     `${BASE_URL}/all?fields=name,cca3,capital,region,population`,
@@ -22,9 +20,7 @@ export async function fetchAllCountries() {
   return res.json();
 }
 
-/**
- * Fetch single country by name
- */
+
 export async function fetchCountryByName(name: string) {
   const res = await fetch(
     `${BASE_URL}/name/${encodeURIComponent(name)}?fullText=true`,

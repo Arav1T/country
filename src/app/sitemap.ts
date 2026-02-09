@@ -17,7 +17,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   return countries.slice(0, 20).map((country: any) => ({
-    url: `https://your-domain.com/countries/${encodeURIComponent(
+    url: `https://country-mu-beige.vercel.app/countries/${encodeURIComponent(
       country.name.common.toLowerCase()
     )}`,
     lastModified: new Date(),
